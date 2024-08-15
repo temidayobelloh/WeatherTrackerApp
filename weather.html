@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="weather.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>WeatherTrack</title>
+</head>
+<body>
+
+    <main class="container">
+        <h1 class="app-title">
+            WeatherTrack 
+            <img src="./assets/cloud_svg_two.svg" alt="Cloud Icon" class="cloud-icon"/>
+        </h1>
+        <section class="input-section">
+            <label for="cityInput" class="label">Location</label>
+            <input id="cityInput" type="text" class="input" placeholder="Enter location here">
+            <button id="weatherBtn" class="btn">Get Weather</button>
+        </section>
+
+        <section id="weatherInfo" class="weather-info hidden">
+            <h2 class="weather-title">Weather in: <span id="cityName"></span></h2>
+            <p id="temperature" class="weather-temp">Temperature: <span></span>°C</p>
+            <p id="conditions" class="weather-conditions">Conditions: <span></span></p>
+        </section>
+
+        <div id="error" class="error-message hidden"></div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Weather App</p>
+    </footer>
+
+    <script src="weather.js"></script>
+</body>
+</html>
